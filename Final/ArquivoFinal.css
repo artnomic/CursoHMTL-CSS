@@ -1,0 +1,93 @@
+body {
+    background-image: url(foto_example.jpg);
+    background-repeat: no-repeat;
+    background-position: 30% 45%;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-family: Verdana;
+    max-width: 900px;
+    margin: auto;
+}
+.photo {
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+#title, .subtitle, .post_title {
+    background-color: #f7f7f7;
+    color: #228B22;
+    text-align: center;
+}
+
+#title {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: #228B22;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.post_title {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post {
+    background: #f7f7f7;
+    padding: 5px;
+    border: 2px solid #FA8072;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    max-width: 900px;
+}
+
+.post_content {
+    margin: 0;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.post_image {
+    position: relative;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    margin-left: 10%;
+    max-width: 32%;
+    max-height: 200px;
+}
+.meuRodape {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.contact_list {
+    list-style-type: none;
+    background-color: #f7f7f7;
+    padding-left: 5px;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 5px;
+}
+
+.element_list{
+    padding-left: 15px;
+    float: left;
+}

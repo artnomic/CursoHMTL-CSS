@@ -1,0 +1,108 @@
+<!--
+► Padding e Margin: No passo 5 usamos o Padding e o Margin da forma mais básica, com apenas um valor, mas eles são mais poderosos que isso. Podemos atribuir tamanhos diferentes para cada lado do box e existem três formas de fazer isso. Conforme:
+
+A primeira forma é colocando um valor para as partes superior e inferior e depois para os lados esquerdo e direito.
+
+A segunda forma é dando valores para cada lado do box. Então começamos pelo topo, passamos o lado direito, depois para a parte inferior e por último o lado esquerdo, é sempre nessa ordem. Quando o valor for 0 não precisamos não precisamos colocar a unidade.
+
+A terceira forma é com as propriedades específicas para cada lado. Essa opção é mais usada quando temos o mesmo valor para 3 lados, e o quarto precisa ter um valor diferente, então usamos o padding com apenas um valor e uma dessas opções para representar o lado diferente.
+
+
+
+► Background: A propriedade Background também é um atalho para várias propriedades, mas por enquanto veremos apenas como mudar a cor de fundo. Abaixo temos 3 formas de colocar uma cor de fundo, mas ainda existem outras formas. 
+
+A primeira é pelo nome da cor em inglês.
+
+A segunda é pelo código hexadecimal.
+
+A terceira é usando apenas o atalho background.
+
+
+
+► Border: A propriedade border pode ter 3 valores: a largura, a cor e o estilo, mas existem algumas particularidades nisso. 
+
+A largura pode ser usada com várias unidades, como px, em e mm. 
+
+A cor pode ser atribuída pelo nome ou por um código hexadecimal, assim como o background.
+
+O estilo é representada por palavras-chave,  algumas delas são:
+
+solid: mostra uma borda simples e reta;
+
+dotted: são bolinhas com um pequeno espaçamento entre elas;
+
+dashed: forma uma linha tracejada.
+
+E existe também a forma como separar a estilização dos lados de uma borda. E se não quiser usar a propriedade border existem as propriedade específicas para cada aspecto de uma borda, são elas border-width para a largura, border-color para a cor e border-style para o estilo.
+
+Border-radius
+
+E a última propriedade é o border-radius, ele permite arredondar os cantos de um elemento. Podemos usar várias unidades, mas as mais comuns são os pixels e a porcentagem. Colocando apenas um valor mudamos todos os cantos do elemento, mas seguindo aquela mesma ordem que vimos no padding e margin - topo, direita, inferior e esquerda -  conseguimos alterar cada canto separadamente.
+
+
+► font-family: Com o font-family altera-se a fonte dos textos, como uma fonte da internet ou uma que esteja instalada no nosso computador, Também tem algumas fontes chamadas como fontes seguras, chamadas de web safe fonts. Essas fontes são chamadas assim pois são encontradas em quases todos os sistemas e podem ser usadas sem preocupação.
+
+► font-size: O font-size nos ajuda a mudar o tamanho do texto, existem algumas unidades de medida para ele.
+
+► font-style: Usamos o font-style para tornar um texto itálico, na maioria das vezes você usará apenas o valor italic para ele, mas se precisar tirar o itálico de um texto você pode usar o valor normal.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro ao CSS</title>
+    <link rel="stylesheet" href="6 - Style para Elementos, Textos e Listas.css">
+</head>
+<body>
+    <header>
+        <img src="https://lh3.googleusercontent.com/F1Yh37Gy_mIfOY_FW3CT2kXVzAj1P9RnAdpdWZFtvx_NgiSmGcgaA-QtCgfQl1N9bISWP6Ujo7n5eeGsZe5Lzrao-CHh0tkEjM4pSmRrSzE87thouSBJw8PqvDBfumicT1Y3TMqGazTg1RRUg2-reuYKSEoUU_Xrfze0myVhIxovWOEKkBdYejgWrypZzV0Q9I3dAHd6L_zfXhmnf2dMLtRa_XbCZmwL_EU4--FH7oOEu8E_tC9D4dLHnuVgc4T7LgQfc9Hob-HKU3KCe85zYZSCb8hVBELUgW3W4TlnxvI7Wf9uldRCKckyi0J_NWbEu6jXXYgT12RBX2TF_-0c-TN9FO3yBiuoiyb1dfJCCgNj5sPgy3Xu7UmdB7i60TcZ1l3eWDuVSotSiT67Xoqjg2zTkgaUvjgMmIkzrF0WIjSr1x0lpS0T7IL7TFw8U5DFbt4846fMGSFb84dQGYFI4DP8mSZruk1nU6ZXXVWjeq6_q7oHXMk1Q1kEFiLVkWqj6nxYni4P9hmnAVzCCfzMJBwcMFJ87d37Gi6WGazzLP2-6FMGzmMhsqXGHMkeR8Gzx5IHjR3dem12jP8Rg8FTYJXXXhHFyrs7_ZTQWRQJQwAdv3iAZ56uP8yDg56AyK5WyhpGNOiBs4M1bvKmiEYzY1UrwbF2S0NkE0nNp6RTLqsTFkqQx-a1jSmYX0etMvzfr2rimzIFedA_2905XxEn2N6O7dtvbgohQIbB44y-P5xPrMKPAoRo07R4jkPwIQg6utf1hF2GVVaJVxJE_w=w1000-h750-no?authuser=0" alt="Casal Arhur e Giovanna em Letreiro de Cancun - Quintana Roo - México" class="photo">
+        <h1 id="title">Minha Viagem de Lua de Mel para Cancún</h1>
+    </header>
+    <section>
+        <header>
+            <h2 class="subtitle">Passeios é com a <a href="https://www.vicancuntours.com/" target="_blank">ViCancun Tours</a></h2>
+        </header>
+        <article class="post">
+            <header>
+                <h3 class="post_title">Passeio em Isla Mujeres com Catamarã</h3>
+                <img src="https://lh3.googleusercontent.com/7Cld2Fef0N54zbf6WC57vbY1AQ6JoiAOgZfs69m-2ydA1V5i63h2PQKKHYOI9aPxsJ8GaDV5r2GfeOJ6hvSlK-gZlnuSh79jycrmtTMHAW44wkMclrJ6WQ03GVa_Zfj5gk5nTrqqOYYz4JJeg0o9HxZbdipn5lFoSMdU2hpMOXqdFfaSkrwy_fgkO5dy6-V4IiygrTUGXwemzLpHtlizK2AlH1ZK6ZrQF20Lk1AAljlObkOFJ9mzPZmct--X47TuQtjEfOVcLJqo5KvG1bnBWoDZQKn3ug1wbeWQJmIWf5-NTP1HBmQthEPhpfmhfDI4FQZoJY32jEaDPXFkqAKQSA2OzS2DwA_0ARe7-79-CZ1Blp_FevEhqCMo9O9Rvc0lnMCPA3YEfitqwFnAYtzljIXl7utTE3DaK3yddaagPj2xwangTvsUGvg7jC8armXmm0f5C2KJwe1bamGR2AZi7NI58bx6QhW9iluJuXP7G0ZSnuRYPVgx6KAjDuuXw_F7C00LN7QoYoGd2XZjw2Z-gYtfw7wi5kJfKglY3JL-LbYUmmE7ar8aq01ly40Sdfgjuw_KVorUdojL3Vea304ucSXVr6tV7odnXID0zqGESgdKYgUg_V1YCM2Q6oZ64IKZR_8N01sjmGoEHuqLnEixPSpfeOPk_t_zZCb-DzfaRewvzhJ8clQqmYm6R-N8A4D5nzb1TjMNB23AWKoS_pf02W_tTSV_f809-oOLd8B3PoaJAk86mWX7rabnbNGkQ6H-FbeFHrNWPLipzkr8HQ=w749-h999-no?authuser=0" alt="Passeio no Catamarã" class="post_image">
+                <img src="https://lh3.googleusercontent.com/pw/AM-JKLXY2RjaO73JaUnae-llwC5rSi-sq-SO88zUK3fuwszUNctd0CsdN44z9vYG-hrmeiso9IBkPqsCSTjeY1IUgQ796ZlM2-IhwqrRH43z5A9bVcCGOXgRlrZhXo11qXZsRj8encnnZW0IKtTErmlus9VyRw=w720-h954-no?authuser=0" alt="Passeio no Catamarã" class="post_image">
+                <img src="https://lh3.googleusercontent.com/pw/AM-JKLU5pA1cWff85dIRpFMgnK1KzovEITj5tJ-9EPQmfIsH9fqN4CCRJ2gkuEsd5TttLx70-8qiaEWoc8sfmwIW_8hsr-uebSaodvHEA9h_Y9dSWr-rPT4ecFKzxsgr2RANH7X7lDu2TB-7q_wg-GkmqClLow=w1673-h1249-no?authuser=0" alt="Em frente a residência de El Chapo" class="post_image">
+            </header>
+            <p class="post_content"> 
+                Lorem ipsum dolor sit amet, <a href="https://www.linkedin.com/in/artnomic/" target="_blank">consectetur adipiscing elit</a>. Ut vitae lacinia enim. Ut nec maximus mi, sit amet scelerisque ipsum. <a href="mailto:contato@artnomic.com.br">Donec turpis leo, ornare sit amet posuere</a> sed, iaculis quis tortor. Phasellus consequat mauris in est euismod, molestie maximus ex porta. Phasellus vel malesuada lectus, sit amet accumsan nisi. Suspendisse quam ante, fermentum in mattis sed, commodo at urna. Nullam ut nisl vitae velit suscipit ullamcorper sed cursus tortor. Nullam sit amet venenatis lectus. Donec et diam eget justo fermentum blandit. Praesent convallis metus neque, a elementum lacus gravida in. Morbi risus ex, volutpat sed maximus nec, feugiat in neque. Donec ultrices, ex vitae tempus consequat, lectus odio maximus magna, non hendrerit velit ipsum vitae nulla. Maecenas odio odio, vehicula in sodales ornare, congue eget turpis. Nulla sit amet orci id diam blandit semper sed et ipsum. Integer non accumsan ligula.
+            </p>
+        </article>
+        <article class="post">
+            <header>
+                <h3 class="post_title">Passeio no Chichén Itzá</h3>
+                <img src="https://lh3.googleusercontent.com/pw/AM-JKLWcEdWBcZg5eY9bB_fJhdR7lZIw2ABfLRnP8Mpom5ffo1xj6gKHVOlISDmnt5L69dBIqAdZ8CEmM6vvyYyJu-OUy71kYA8kOFoFmmw13ETOImpO2MFn_uDEGQuKcKpQE52TGEmkdPzhjaybksxy8KFQrQ=w1666-h1249-no?authuser=0" alt="Passeio em Valloid México" class="post_image">
+                <img src="https://lh3.googleusercontent.com/pw/AM-JKLXxm1xil6bZFILLHa4YzpmENBDZQ3noMrTbrodwJz9BbE_2jJNjgnuELmmReQW9bZvXTH1JV5LGNgOCpdw6BhRADrpR-3dePVgxJN92FMVpOENCseKRne3zOFJOI0Ee7Estj09V9RpvkSstY39WmY68jA=w937-h1249-no?authuser=0" alt="Passeio no Cenote" class="post_image">
+                <img src="https://lh3.googleusercontent.com/pw/AM-JKLVAIiXBj9PQGaQDtE9T5uir0MYOdxEKMlRf4PlJgf8neLyc_ej6EpT4Nz8c52megHucKG4sOlaF8Pohrw8VI1pVUOzPefNTHIjZscCyqTdfhr7PWpDB2brkOAG-2h6Yv6gafu6EGCVDIaDMH6fTOkeEWg=w937-h1249-no?authuser=0" alt="Chichén Itzá, uma das maravilhas do Mundo Moderno" class="post_image">
+            </header>
+            <p class="post_content">
+                Lorem ipsum dolor sit amet, <a href="https://www.linkedin.com/in/artnomic/" target="_blank">consectetur adipiscing elit</a>. Ut vitae lacinia enim. Ut nec maximus mi, sit amet scelerisque ipsum. <a href="mailto:contato@artnomic.com.br">Donec turpis leo, ornare sit amet posuere</a> sed, iaculis quis tortor. Phasellus consequat mauris in est euismod, molestie maximus ex porta. Phasellus vel malesuada lectus, sit amet accumsan nisi. Suspendisse quam ante, fermentum in mattis sed, commodo at urna. Nullam ut nisl vitae velit suscipit ullamcorper sed cursus tortor. Nullam sit amet venenatis lectus. Donec et diam eget justo fermentum blandit. Praesent convallis metus neque, a elementum lacus gravida in. Morbi risus ex, volutpat sed maximus nec, feugiat in neque. Donec ultrices, ex vitae tempus consequat, lectus odio maximus magna, non hendrerit velit ipsum vitae nulla. Maecenas odio odio, vehicula in sodales ornare, congue eget turpis. Nulla sit amet orci id diam blandit semper sed et ipsum. Integer non accumsan ligula.
+            </p>
+        </article>
+        <article class="post">
+            <header>
+                <h3 class="post_title">Dias no Hotel</h3>
+                <img src="https://lh3.googleusercontent.com/pw/AM-JKLXfRsi7heUqRPAmtcuSQ3nesHWLnB0pdH7gfIQJNwqARXzLXpGERu6gjYXT5qO8mMZu9MElDdrycLKbZkHFx0J7dUeujcuuxHj3LxaQXHQjH1WigYdRVq6WrU_2vHpplZ00nDoRbCYD-oM_lC9rJbjJag=w1666-h1249-no?authuser=0" alt="Letreiro Cancún no Hotel" class="post_image">
+                <img src="https://lh3.googleusercontent.com/pw/AM-JKLVGKgh-sQ0SPEcPgeIBfrx6Gg_viLNeXgN1IqpnnQbldzNhQ9vE738dX-K_sTxZ81__1dGEfs8qMPr7Anvq_lkE7Ov6RHagbp7exomHtF-dx41KINrNdvnXaArHI86iC-U0FI0nekNJ_GvG9QTpI2plAg=w935-h1249-no?authuser=0" alt="Piscina do Hotel" class="post_image">
+                <img src="https://lh3.googleusercontent.com/pw/AM-JKLUX3AsjgIiWXcuVZfigLAoeewh4oXppfbKa8ItOeJTQeFLsGghZPBuc40fbuHFCkCRUS8DukqIwMHy6aDjMKkVB1-dHs89psXfvctdGGe8pIPgnQ-DcMP5xaC_HOFxckFBwTgKqUnwwnOoWnnhH7i8WoQ=w937-h1249-no?authuser=0" alt="Foto bônus em Chichen Itza" class="post_image">
+            </header>
+            <p class="post_content">
+                Lorem ipsum dolor sit amet, <a href="https://www.linkedin.com/in/artnomic/" target="_blank">consectetur adipiscing elit</a>. Ut vitae lacinia enim. Ut nec maximus mi, sit amet scelerisque ipsum. <a href="mailto:contato@artnomic.com.br">Donec turpis leo, ornare sit amet posuere</a> sed, iaculis quis tortor. Phasellus consequat mauris in est euismod, molestie maximus ex porta. Phasellus vel malesuada lectus, sit amet accumsan nisi. Suspendisse quam ante, fermentum in mattis sed, commodo at urna. Nullam ut nisl vitae velit suscipit ullamcorper sed cursus tortor. Nullam sit amet venenatis lectus. Donec et diam eget justo fermentum blandit. Praesent convallis metus neque, a elementum lacus gravida in. Morbi risus ex, volutpat sed maximus nec, feugiat in neque. Donec ultrices, ex vitae tempus consequat, lectus odio maximus magna, non hendrerit velit ipsum vitae nulla. Maecenas odio odio, vehicula in sodales ornare, congue eget turpis. Nulla sit amet orci id diam blandit semper sed et ipsum. Integer non accumsan ligula.
+            </p>
+        </article>
+    </section>
+    <footer class="meuRodape">
+        <ul class="contact_list">
+            <li class="element_list"><a href="mailto:contato@artnomic.com.br" target="_blank">E-mail</a></li>
+            <li class="element_list"><a href="https://www.linkedin.com/in/artnomic/" target="_blank">LinkedIn</a></li>
+            <li class="element_list"><a href="https://github.com/artnomic" target="_blank">GitHub</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
